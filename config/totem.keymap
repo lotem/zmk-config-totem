@@ -34,9 +34,9 @@
 
 / {
     behaviors {
-        mp: mod_preferred {
+        mh: mod_hold_preferred {
             compatible = "zmk,behavior-hold-tap";
-            label = "mod_preferred";
+            label = "mod_hold_preferred";
             flavor = "hold-preferred";
             tapping-term-ms = <170>;
             quick-tap-ms = <170>;
@@ -45,9 +45,9 @@
                 <&kp>,
                 <&kp>;
         };
-        lp: layer_preferred {
+        lh: layer_hold_preferred {
             compatible = "zmk,behavior-hold-tap";
-            label = "layer_preferred";
+            label = "layer_hold_preferred";
             flavor = "hold-preferred";
             tapping-term-ms = <170>;
             quick-tap-ms = <170>;
@@ -89,8 +89,8 @@
             bindings = <
                      &kp Q  &kp W     &kp E      &kp R      &kp T      &kp Y       &kp U         &kp I    &kp O           &kp P
                &mt LSHFT A  &kp S     &kp D      &kp F      &kp G      &kp H       &kp J         &kp K    &kp L  &mt RSHFT SEMI
-&mp LCTRL ESC   &mt LALT Z  &kp X     &kp C      &kp V      &kp B      &kp N       &kp M     &kp COMMA  &kp DOT  &mt RALT SLASH  &mt RCTRL APOS
-                                   &kp LGUI  &lp 1 TAB  &kp ENTER  &kp SPACE  &lp 2 BSPC  &mp RGUI DEL
+&mh LCTRL ESC   &mt LALT Z  &kp X     &kp C      &kp V      &kp B      &kp N       &kp M     &kp COMMA  &kp DOT  &mt RALT SLASH  &mt RCTRL APOS
+                                   &kp LGUI  &lh 1 TAB  &kp ENTER  &kp SPACE  &lh 2 BSPC  &mh RGUI DEL
             >;
         };
 
