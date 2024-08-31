@@ -78,10 +78,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                 &kp Q  &kp W  &kp E          &kp R       &kp T             &kp Y      &kp U        &kp I           &kp O         &kp P
-                 &kp A  &kp S  &kp D          &kp F       &kp G             &kp H      &kp J        &kp K           &kp L         &kp SEMI
-&mt LSHFT GRAVE  &kp Z  &kp X  &kp C          &kp V       &kp B             &kp N      &kp M        &mt RGUI COMMA  &mt RALT DOT  &mt RCTRL SLASH  &mt RSHFT APOS
-                               &mtp LGUI ESC  &ltp 1 TAB  &mtp LCTRL ENTER  &kp SPACE  &ltp 2 BSPC  &mtp RALT DEL
+                 &kp Q  &kp W  &kp E          &kp R       &kp T             &kp Y      &kp U        &kp I           &kp O          &kp P
+                 &kp A  &kp S  &kp D          &kp F       &kp G             &kp H      &kp J        &kp K           &kp L          &kp SEMI
+&mt LSHFT GRAVE  &kp Z  &kp X  &kp C          &kp V       &kp B             &kp N      &kp M        &mt RALT COMMA  &mt RCTRL DOT  &mt RSHIFT SLASH  &mt RSHFT APOS
+                               &mtp LGUI ESC  &ltp 1 TAB  &mtp LCTRL ENTER  &kp SPACE  &ltp 2 BSPC  &mtp RGUI DEL
             >;
         };
 
@@ -104,7 +104,7 @@
             bindings = <
         &none            &kp LEFT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE  &none        &kp CARET      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp TILDE
         &kp EXCLAMATION  &kp AT            &kp HASH        &kp DOLLAR       &kp PERCENT  &kp AMPERSAND  &kp MINUS             &kp EQUAL              &kp BACKSLASH      &kp GRAVE
-&trans  &kp LCTRL        &kp LALT          &kp LGUI        &none            &none        &kp ASTERISK   &kp UNDERSCORE        &kp PLUS               &kp PIPE           &kp SLASH  &trans
+&trans  &kp LSHFT        &kp LCTRL         &kp LALT        &kp LGUI         &none        &kp ASTERISK   &kp UNDERSCORE        &kp PLUS               &kp PIPE           &kp SLASH  &trans
                                            &trans          &trans           &trans       &caps_word     &mo 3                 &trans
             >;
         };
@@ -128,7 +128,7 @@
             bindings = <
         &kp INSERT    &kp N1  &kp N2  &kp N3  &kp PLUS   &kp HOME   &kp PG_DN  &kp PG_UP  &kp END    &kp COLON
         &kp DELETE    &kp N4  &kp N5  &kp N6  &kp MINUS  &kp LEFT   &kp DOWN   &kp UP     &kp RIGHT  &kp SEMICOLON
-&trans  &kp CAPSLOCK  &kp N7  &kp N8  &kp N9  &kp N0     &kp ASTRK  &none      &trans     &trans     &trans         &trans
+&trans  &kp CAPSLOCK  &kp N7  &kp N8  &kp N9  &kp N0     &kp ASTRK  &kp RGUI   &trans     &trans     &trans         &trans
                               &trans  &mo 3   &trans     &trans     &trans     &trans
             >;
         };
@@ -152,7 +152,7 @@
             bindings = <
         &none  &kp F1  &kp F2   &kp F3   &kp F4   &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &kp PSCRN
         &none  &kp F5  &kp F6   &kp F7   &kp F8   &kp C_NEXT  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP      &none
-&trans  &none  &kp F9  &kp F10  &kp F11  &kp F12  &none       &none         &trans        &trans        &trans     &trans
+&trans  &none  &kp F9  &kp F10  &kp F11  &kp F12  &none       &kp RGUI      &kp RALT      &kp RCTRL     &kp RSHFT  &trans
                        &trans   &trans   &trans   &trans      &trans        &trans
             >;
         };
